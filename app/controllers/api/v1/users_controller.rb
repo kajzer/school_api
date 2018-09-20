@@ -32,7 +32,12 @@ class Api::V1::UsersController < Api::V1::BaseController
     end
     
     def index
-        @users = User.all
+        if params[:limit]
+            @users = User.all.limit(params[:limit].to_i)
+        else
+            @users = User.all
+        end
+        
         if params[:access_token] == "abracadabra"
             render json: {
                 users: @users.map { |user| user.attributes.merge(address: 
