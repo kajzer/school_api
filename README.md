@@ -23,3 +23,7 @@ Create and seed DB with sample data:
 heroku run rails db:migrate
 heroku run rails db:seed
 ```
+If you deployed app to heroku
+```
+heroku pg:reset DATABASE
+```
