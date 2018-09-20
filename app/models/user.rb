@@ -8,6 +8,7 @@
 #  fav_prog   :string
 #  index_nr   :string
 #  last_name  :string
+#  marks      :string
 #  name       :string
 #  phone_nr   :string
 #  created_at :datetime         not null
@@ -15,6 +16,8 @@
 #
 
 class User < ApplicationRecord
+    serialize :marks, Array
+    serialize :fav_prog, Array
     has_many :schools
     has_many :addresses
 end

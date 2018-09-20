@@ -53,6 +53,9 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     erubi (1.7.1)
+    faker (1.9.1)
+      i18n (>= 0.7)
+    ffaker (2.10.0)
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -139,6 +142,8 @@ DEPENDENCIES
   annotate (~> 2.7, >= 2.7.4)
   bootsnap (>= 1.1.0)
   byebug
+  faker (~> 1.6, >= 1.6.3)
+  ffaker (~> 2.10)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 5.2.1)
