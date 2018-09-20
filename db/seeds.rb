@@ -12,7 +12,7 @@ require 'faker'
 # user.schools.create!(campus: "Campus A", degree: "bachellor", secondary_school: "Secondary School", university: "MIT")
 # user.addresses.create!(city: "Warsaw", street_adress: "Wislana", zip_code: "03-900")
 
-40.times do
+400.times do
     marks = []
     rand(3..6).times do
         marks << rand(2..5)
