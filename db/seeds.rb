@@ -17,7 +17,7 @@ require 'faker'
     rand(3..6).times do
         marks << rand(2..5)
     end
-    absence = -3*marks.inject(:+).to_f.round/marks.size+14
+    absence = -3*marks.inject(:+).to_f.round/marks.size+15
     user = User.create!(absence: absence,
                         avatar_url: FFaker::Avatar.image,
                         fav_prog:   FFaker::Skill.tech_skills, 
